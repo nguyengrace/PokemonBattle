@@ -1,0 +1,281 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "gameFont";
+    src: url(./pokemon-gb-font/PokemonGb-RAeo.ttf);
+}
+
+body {
+    background-color: beige;
+    font-family: "gameFont";
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.header img {
+    height:100px;
+    width: auto;
+}
+
+.game {
+    background-color: lightgray;
+    padding: 10px;
+    border: solid gray;
+    border-radius: 20px;
+    border-width: 20px;
+    margin: 0px 300px;
+}
+
+/* Game Style */
+
+.computer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.computerHealth {
+    width: 400px;
+    height: 60px;
+    background-color: whitesmoke;
+    border: solid gray;
+    border-width: 10px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.computerInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.healthbar {
+    margin-top: 15px;
+    float: right;
+    background-color: gray;
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.healthbar p {
+    margin-top: 9.5px;
+    margin-left: 10px;
+    color: gold;
+    font-weight: bolder;
+}
+
+.totalhealth {
+    height: 15px;
+    width: 240px;
+    margin-top: -22px;
+    margin-left: 45px;
+    border: solid white;
+    border-width: 5px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+#remaininghealth {
+    height: 15px;
+    width: 240px;
+    border-radius: 20px;
+    background-color: green;
+    transition: 0.1s;
+}
+
+.computerCharacter {
+    height: 200px;
+}
+
+.computer img{
+    height: 200px;
+    width: auto;
+}
+
+/* Player */
+
+.player{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.playerHealth {
+    width: 400px;
+    height: 60px;
+    background-color: whitesmoke;
+    border: solid gray;
+    border-width: 10px;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.playerInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.playerHealthBar {
+    margin-top: 15px;
+    float: right;
+    background-color: gray;
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.playerHealthBar p {
+    margin-top: 9.5px;
+    margin-left: 10px;
+    color: gold;
+    font-weight: bolder;
+}
+
+.playerTotalHealth {
+    height: 15px;
+    width: 240px;
+    margin-top: -22px;
+    margin-left: 45px;
+    border: solid white;
+    border-width: 5px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+#playerRemainingHealth {
+    height: 15px;
+    width: 240px;
+    border-radius: 20px;
+    background-color: green;
+    transition: 0.1s;
+}
+
+.playerCharacter {
+    height: 200px;
+}
+
+.player img{
+    height: 200px;
+    width: auto;
+}
+
+/* Prompt */
+
+.prompt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: -100px;
+}
+
+.promptText {
+    flex: 2;
+    border: solid orange;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-width: 10px;
+    border-right: 0px;
+    background-color: gray;
+}
+
+.promptText p{
+    color: white;
+    padding: 10px;
+    font-family: "gameFont";
+}
+
+.choices {
+    border: solid blue;
+    border-radius: 5px;
+    border-width: 5px;
+    background-color: lightgray;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.button {
+    transition: 0.3s ease-in-out;
+    flex: 1;
+}
+
+.button img{
+    height: 200px;
+    width: 200px;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+#waterButton:hover{
+    filter: invert(89%) sepia(16%) saturate(711%) hue-rotate(176deg) brightness(96%) contrast(95%);
+}
+
+#fireButton:hover{
+    filter: invert(64%) sepia(35%) saturate(604%) hue-rotate(316deg) brightness(99%) contrast(86%);
+}
+
+#grassButton:hover {
+    filter: invert(89%) sepia(10%) saturate(771%) hue-rotate(75deg) brightness(92%) contrast(87%);
+}
+
+#result{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scoreboard {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.oneScore {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.end {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+tryAgain {
+    border: solid black;
+}
